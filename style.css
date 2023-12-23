@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --primaryColor:#000;
+    font-size: 16px;
+}
 body{
     padding: .5em;
 }
@@ -18,13 +22,39 @@ h1 + nav ul {
 .socialMediaLinks{
     display: flex;
     align-items:center;
+    justify-content: flex-end;
 
 }
 
 
 
-@media screen and (min-width:992px){
+@media screen and (min-width:990px){
+    header{
+        grid-template-columns: 130px auto 0 140px;
+    }
     #hamburger-menu {
         display: none;
+    }
+   h1{
+    font-size: 3rem;
+   }
+    h1 + nav ul {
+        display:flex;
+        justify-content: center;
+        list-style: none;
+    }
+    nav ul li {
+       padding: 1em;
+    }
+    ul li a {
+        text-decoration: none;
+       color:var(--primaryColor);
+       font-size: 1.5rem;
+       font-weight: 600;
+    }
+    .socialMediaLinks a img{ 
+        width: 40px;
+        height: 40px;
+        justify-content: flex-start;
     }
 }
