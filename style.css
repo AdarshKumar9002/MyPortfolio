@@ -5,9 +5,31 @@
 :root{
     --primaryColor:#000;
     font-size: 16px;
+    --footerColor: #c0c0c0;
+    /* --footerFontColor: #fff; */
 }
-body{
-    padding: .5em;
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1rem;
+}
+h4{
+    font-size: 2.3em;
+}
+h5{
+    font-size: 1em;
+}
+h6{
+    font-size: 1em;
+}
+p{
+    font-size: 1rem;
+    color: var(--primaryColor);
 }
 header{
     display: grid;
@@ -25,19 +47,78 @@ h1 + nav ul {
     justify-content: flex-end;
 
 }
+main{
+    padding: .5em;
+}
+main + section:first-child{
+    margin-top: .3em;
+}
+.projectGallary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectGallary > div{
+    margin-top: 2em;
+}
+main > section{
+    background-color: #eee;
+}
+main > section:first-child{
+    text-align: center;
+}
+.skills{
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5em;
+}
+
+footer{
+    color: var(--footerFontColor);
+    padding: .7em;
+    background-color: var(--footerColor);
+}
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__Nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+.footer__Nav ul li {
+   padding: .3em;
+
+}
+.footer__Nav ul li a {
+    text-decoration: none;
+   color:var(--primaryColor);
+   font-size: .8rem;
+   font-weight: bold;
+}
+footer p{
+   padding: .3em;
+    text-align: center;
+    font-weight: bold;
+}
 
 
 @media screen and (min-width:990px){
+    h1{
+        font-size: 3rem;
+    }
     header{
         grid-template-columns: 130px auto 0 140px;
     }
     #hamburger-menu {
         display: none;
     }
-   h1{
-    font-size: 3rem;
-   }
     h1 + nav ul {
         display:flex;
         justify-content: center;
@@ -52,9 +133,22 @@ h1 + nav ul {
        font-size: 1.5rem;
        font-weight: 600;
     }
+    .socialMediaLinks{
+        justify-content: flex-start;
+    }
     .socialMediaLinks a img{ 
         width: 40px;
         height: 40px;
-        justify-content: flex-start;
+        
     }
+    .projectGallary{
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+    .footer__Nav ul li a {
+       font-size: 1rem;
+       font-weight: 800;
+    }
+    
 }
