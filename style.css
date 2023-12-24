@@ -45,7 +45,9 @@ h1 + nav ul {
     display: flex;
     align-items:center;
     justify-content: flex-end;
-
+}
+.hero--Image {
+    overflow: hidden;
 }
 main{
     padding: .5em;
