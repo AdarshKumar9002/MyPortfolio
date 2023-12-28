@@ -7,6 +7,9 @@
     <title>Adarsh Kumar || Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,10 +17,12 @@
         <div aria-disabled="false" id="hamburger-menu">
             <img src="hamburger-menu.svg" alt="Menu">
         </div>
-        <h1>AK</h1>
-        <nav aria-disabled="true">
+        <a href="index.html">
+            <h1>AK</h1>
+        </a>
+        <nav class="header__nav" aria-disabled="true">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -41,8 +46,11 @@
     </header>
     <section class="hero--Image">
         <picture>
-            <source srcset="https://placehold.co/430x300" media="(max-width:600px)">
-            <source srcset="https://placehold.co/1505x400" media="(min-width:992px)">
+            <source srcset="https://placehold.co/430x300" media="(max-width:768px)">
+            <source srcset="https://placehold.co/1000x400" media="(max-width:992px) and (min-width:768px) ">
+            <source srcset="https://placehold.co/1505x400" media="(max-width:1200px) and (min-width:992px)">
+            <source srcset="https://placehold.co/2000x400" media=" (max-width:1400px) and(min-width:1200px)">
+            <source srcset="https://placehold.co/2500x400" media="(min-width:1400px)">
             <img src="https://placehold.co/600x400" alt="Adarsh's Pic">
         </picture>
     </section>

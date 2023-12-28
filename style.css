@@ -7,6 +7,10 @@
     font-size: 16px;
     --footerColor: #c0c0c0;
     /* --footerFontColor: #fff; */
+    --primaryFontfamily:'Roboto Condensed', sans-serif;
+}
+body{
+    font-family: var(--primaryFontfamily);
 }
 h1{
     font-size: 2rem;
@@ -31,6 +35,10 @@ p{
     font-size: 1rem;
     color: var(--primaryColor);
 }
+a {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
 header{
     display: grid;
     grid-template-columns: 100px auto 0 100px;
@@ -38,7 +46,7 @@ header{
 h1{
     text-align: center;
 }
-h1 + nav ul {
+.header__nav ul {
     display: none;
 }
 .socialMediaLinks{
@@ -110,8 +118,7 @@ footer p{
     font-weight: bold;
 }
 
-
-@media screen and (min-width:990px){
+@media screen and ((min-width:768px)){
     h1{
         font-size: 3rem;
     }
@@ -121,15 +128,112 @@ footer p{
     #hamburger-menu {
         display: none;
     }
-    h1 + nav ul {
+    .header__nav ul {
         display:flex;
         justify-content: center;
         list-style: none;
     }
-    nav ul li {
+    .header__nav ul li {
        padding: 1em;
     }
-    ul li a {
+    .header__nav ul li a {
+        text-decoration: none;
+       color:var(--primaryColor);
+       font-size: 1.5rem;
+       font-weight: 600;
+    }
+    .socialMediaLinks{
+        justify-content: flex-start;
+    }
+    .socialMediaLinks a img{ 
+        width: 43px;
+        height: 43px;
+        
+    }
+    .projectGallary{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .footer__Nav ul li {
+       padding: 1em;
+    }
+    .footer__Nav ul li a {
+       font-size: 1.2rem;
+       font-weight: 800;
+    }
+    
+}
+
+@media screen and ((min-width:992px)){
+    h1{
+        font-size: 3rem;
+    }
+    header{
+        grid-template-columns: 130px auto 0 140px;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+    .header__nav ul {
+        display:flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .header__nav ul li {
+       padding: 1em;
+    }
+    .header__nav ul li a {
+        text-decoration: none;
+       color:var(--primaryColor);
+       font-size: 1.5rem;
+       font-weight: 600;
+    }
+    .socialMediaLinks{
+        justify-content: flex-start;
+    }
+    .socialMediaLinks a img{ 
+        width: 40px;
+        height: 40px;
+        
+    }
+    .projectGallary{
+        flex-direction: row;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .footer__Nav ul li {
+       padding: 1em;
+    }
+    .footer__Nav ul li a {
+       font-size: 1.5rem;
+       font-weight: 800;
+    }
+    
+}
+
+@media screen and ((min-width:1200px) ){
+    h1{
+        font-size: 3rem;
+    }
+    header{
+        grid-template-columns: 130px auto 0 140px;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+    .header__nav ul {
+        display:flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .header__nav ul li {
+       padding: 1em;
+    }
+    .header__nav ul li a {
         text-decoration: none;
        color:var(--primaryColor);
        font-size: 1.5rem;
@@ -148,8 +252,64 @@ footer p{
         justify-content: center;
         gap: 50px;
     }
+
+    .footer__Nav ul li {
+       padding: 1em;
+    }
     .footer__Nav ul li a {
-       font-size: 1rem;
+       font-size: 1.5rem;
+       font-weight: 800;
+    }
+    
+}
+
+@media screen and (min-width:1400px){
+    h1{
+        font-size: 3rem;
+    }
+    header{
+        grid-template-columns: 130px auto 0 140px;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+    .header__nav ul {
+        display:flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .header__nav ul li {
+       padding: 1em;
+    }
+    .header__nav ul li a {
+        text-decoration: none;
+       color:var(--primaryColor);
+       font-size: 1.5rem;
+       font-weight: 600;
+    }
+    .socialMediaLinks{
+        justify-content: flex-start;
+    }
+    .socialMediaLinks a img{ 
+        width: 40px;
+        height: 40px;
+        
+    }
+    main {
+        width: 1500px;
+        margin: auto;
+    }
+    .projectGallary{
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .footer__Nav ul li {
+       padding: 1em;
+    }
+    .footer__Nav ul li a {
+       font-size: 1.5rem;
        font-weight: 800;
     }
     
