@@ -14,67 +14,58 @@
 
 <body>
     <header>
-        <div aria-disabled="false" id="hamburger-menu">
-            <img src="./img/hamburger-menu.svg" alt="Menu">
-        </div>
-        <a href="index.html">
-            <h1>AK</h1>
-        </a>
-        <nav class="header__nav" aria-disabled="true">
+        <a href="index.html"><h1>AK</h1></a>
+        <button id="btn-menu" class="hamburgerMenu"  aria-expanded="false" aria-controls="nav__container">
+          <img id="imgSrc" src="img/menu.svg" alt="menu button">
+        </button>
+        <div class="nav__container" data-visible="false">
+          <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">PROJECTS</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CONTACT</a></li>
             </ul>
-        </nav>
-
-        <div class="socialMediaLinks">
+          </nav>
+          <div class="socialMediaLinks">
             <a href="https://www.linkedin.com/in/adarsh-kumar-b3b16729b/" target="_blank">
                 <img src="./img/linkdin_logo_media_social_icon.svg" alt="Linkdin">
-
             </a>
             <a href="https://github.com/AdarshKumar9002" target="_blank">
                 <img src="./img/github_icon.svg" alt="gitHub">
-
             </a>
             <a href="https://twitter.com/adarashkumar3" target="_blank">
                 <img src="./img/_x_logo_twitter_icon.svg" alt="Twitter">
             </a>
-
         </div>
-    </header>
-    <section class="hero--Image">
-        <picture>
-            <source srcset="https://placehold.co/430x300" media="(max-width:768px)">
-            <source srcset="https://placehold.co/1000x400" media="(max-width:992px) ">
-            <source srcset="https://placehold.co/1505x400" media="(max-width:1200px)">
-            <source srcset="https://placehold.co/2000x400" media=" (max-width:1400px)">
-            <source srcset="https://placehold.co/2500x400" media="(min-width:1400px)">
-            <img src="https://placehold.co/600x400" alt="Adarsh's Pic">
-        </picture>
+        </div>
+      </header>
+    <section class="heroImage">
+        <div class="heroImage__background">
+            <img src="/src/img/heroImage.jpg" alt="heroImage">
+        </div>
     </section>
     <main>
         <section>
             <h2>Project</h2>
             <div class="projectGallary">
                 <div>
-                    <img src="https://placehold.co/250x250" alt="Project1">
+                    <img src="img/project_image.png" alt="Project1">
                     <h3>Project1 Name</h3>
                     <p>Project Info</p>
                 </div>
                 <div>
-                    <img src="https://placehold.co/250x250" alt="Project1">
+                    <img src="img/project_image.png" alt="Project2">
                     <h3>Project2 Name</h3>
                     <p>Project Info</p>
                 </div>
                 <div>
-                    <img src="https://placehold.co/250x250" alt="Project1">
+                    <img src="img/project_image.png" alt="Project3">
                     <h3>Project3 Name</h3>
                     <p>Project Info</p>
                 </div>
                 <div>
-                    <img src="https://placehold.co/250x250" alt="Project1">
+                    <img src="img/project_image.png" alt="Project4">
                     <h3>Project4 Name</h3>
                     <p>Project Info</p>
                 </div>
@@ -91,7 +82,9 @@
     </main>
     <footer>
         <div class="footer__container">
-            <h4>AK</h4>
+            <a href="index.html">
+                <h4>AK</h4>
+            </a>        
             <nav class="footer__Nav">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -100,27 +93,24 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <div class="socialMediaLinks">
+            <div class="footer__container__socialMediaLinks">
                 <a href="https://www.linkedin.com/in/adarsh-kumar-b3b16729b/" target="_blank">
                     <img src="./img/linkdin_logo_media_social_icon.svg" alt="Linkdin">
-
                 </a>
                 <a href="https://github.com/AdarshKumar9002" target="_blank">
                     <img src="./img/github_icon.svg" alt="gitHub">
-
                 </a>
                 <a href="https://twitter.com/adarashkumar3 " target="_blank">
                     <img src="./img/_x_logo_twitter_icon.svg" alt="Twitter">
                 </a>
-
             </div>
         </div>
         <p>
-
             <small>Copyright &copy; reserved</small>
         </p>
     </footer>
-    <script src="script.js"></script>
+   
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
