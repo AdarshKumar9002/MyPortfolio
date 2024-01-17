@@ -16,7 +16,6 @@
 }
 body {
   font-family: var(--primaryFontfamily);
-  overflow: hidden;
 }
 h1 {
   font-size: 2rem;
