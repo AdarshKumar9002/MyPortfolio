@@ -391,6 +391,18 @@ footer p {
   .footer__container__socialMediaLinks a:hover {
     scale: 150%;
   }
+
+
+  /* CSS for project page */
+
+  .project__flex--wrap {
+    flex-wrap: wrap;
+  }
+  .project__flex--wrap img {
+    width: 400px;
+    height: 400px;
+  }
+
 }
 @media screen and ((min-width: 1200px)) {
   header nav {
