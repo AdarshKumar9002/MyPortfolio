@@ -392,6 +392,9 @@ footer p {
     scale: 150%;
   }
 
+
+  /* CSS for project page */
+
   .project__flex--wrap {
     flex-wrap: wrap;
   }
