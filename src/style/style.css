@@ -239,6 +239,52 @@ footer p {
   gap: 0;
 }
 
+
+/* CSS for about page */
+
+.about--main {
+  background: linear-gradient(180deg, #000000d6, #c05959b3);
+}
+.aboutMe {
+ background: none;
+  margin: 0 1em;
+  padding: 0 0.4em; 
+}
+
+.aboutMe div > img  {
+width: 200px;
+}
+.aboutMe h2 {
+  font-size: 3rem;
+  color: var(--secondyColor);
+}
+.aboutMe h3 {
+  font-size: 2rem;
+  color: var(--secondyColor);
+}
+.aboutMe p {
+  font-size: 1.5rem;
+  color: var(--secondyColor);
+  margin: 1em 0;
+}
+.about__btn__container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 0;
+  gap: 1em;
+}
+.about__btn__container a {
+  font-size: 1.3rem;
+  color: var(--secondyColor);
+  background-color: var(--buttonSecondry);
+  display: flex;
+  align-items: center;
+  width: 120px;
+  padding: 0.2em;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
 @media screen and ((min-width: 768px)) {
   a h1 {
     color: var(--primaryColor);
@@ -336,6 +382,7 @@ footer p {
     scale: 150%;
   }
 }
+
 @media screen and ((min-width: 992px)) {
   header nav {
     margin-right: 16em;
@@ -402,6 +449,8 @@ footer p {
     width: 400px;
     height: 400px;
   }
+
+ 
 
 }
 @media screen and ((min-width: 1200px)) {
