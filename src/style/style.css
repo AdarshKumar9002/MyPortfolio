@@ -12,6 +12,11 @@
   --sectiionColor: #eee;
   --footerColor: #c0c0c0;
   --primaryFontfamily: "Roboto Condensed", sans-serif;
+
+  --projectPageBgColor:  linear-gradient(180deg, #000000d6, #c05959b3);;
+  --aboutPageBgColor:  linear-gradient(180deg, #000000d6, #c05959b3);
+  --contactPageBgColor:  linear-gradient(180deg, #000000d6, #c05959b3);
+
   font-size: 16px;
 }
 body {
@@ -243,7 +248,7 @@ footer p {
 /* CSS for about page */
 
 .about--main {
-  background: linear-gradient(180deg, #000000d6, #c05959b3);
+  background: var(--aboutPageBgColor);
 }
 .aboutMe {
  background: none;
@@ -251,8 +256,9 @@ footer p {
   padding: 0 0.4em; 
 }
 
-.aboutMe div > img  {
+.aboutMe__Content img  {
 width: 200px;
+border-radius: 50%;
 }
 .aboutMe h2 {
   font-size: 3rem;
@@ -381,6 +387,35 @@ width: 200px;
   .footer__container__socialMediaLinks a:hover {
     scale: 150%;
   }
+
+
+  /* css for about page */
+
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em auto;
+    width: 500px;
+  }
+  .aboutMe__Content {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1em 0;
+    background: linear-gradient(45deg, black, transparent);
+    padding: 1.5em;
+    border-radius: 50px;
+  }
+  .aboutMe__Content > div {
+    width: 300px;
+    padding: 0 1em;
+  }
+  .aboutMe__Content img  {
+  width: 350px;
+  border-radius: 0;
+  }
+
 }
 
 @media screen and ((min-width: 992px)) {
@@ -450,8 +485,15 @@ width: 200px;
     height: 400px;
   }
 
- 
+  
+/* CSS for about page */
 
+.aboutMe__Content > div {
+  width: 350px;
+}
+.aboutMe__Content img  {
+width: 400px;
+}
 }
 @media screen and ((min-width: 1200px)) {
   header nav {
