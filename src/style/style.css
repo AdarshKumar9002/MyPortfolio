@@ -131,7 +131,7 @@ header [data-visible="true"] {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: var(--heroImageBackground);
   overflow: hidden;
 }
@@ -308,6 +308,9 @@ footer p {
 
 .headerPostion--static {
   position: static;
+}
+.headerPostion--static .lucide {
+  stroke: var(--primaryColor);
 }
 
 /* CSS for about page */
