@@ -32,19 +32,15 @@ const hamburgerMenu = () => {
 };
 HAMBURGER_MENU_ELEMENT.addEventListener('click', hamburgerMenu);
 
-function heroInfo(name, degination, description) {
+function heroInfo(name, degination) {
   if (document.URL.includes('index')) {
     const potfolioers_name = document.getElementById('heroImage__text--name');
     const potfolioers_degination = document.getElementById(
       'heroImage__text--degination',
     );
-    const potfolioers_description = document.getElementById(
-      'heroImage__text--intro',
-    );
 
     potfolioers_name.innerHTML = name;
     potfolioers_degination.innerHTML = degination;
-    potfolioers_description.innerHTML = description;
   }
 }
 
@@ -60,6 +56,7 @@ const checkForSpecialChar = (fieldValue) => {
   }
   return 0;
 };
+
 
 const firstNameValidation = () => {
   const firstName = FIRST_NAME_ELEMENT.value.trim();
@@ -152,13 +149,11 @@ const messageValidation = () => {
   const msg = MESSAGE_ELEMENT.value.trim();
   return msg;
 };
-
 const showOutput = () => {
   const OUTPUT_ELEMENT = document.getElementById('output');
   OUTPUT_ELEMENT.innerHTML = `<p>First Name: ${firstNameValidation()}</p>
   <p>Last Name: ${lastNameValidation()}</p> <p>Email: ${emailValidation()}</p> <p>Phone number: ${(numberVaidation())}</p> <p> Subject: ${(subjectValidation())}</p> <p> Message: ${(messageValidation())}</p>`;
 };
-
 const formValidation = (event) => {
   if (document.URL.includes('contact')) {
   event.preventDefault();
